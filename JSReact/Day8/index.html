@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(' !"false" ', !'false');
+
+        let a = 10;
+        let c = ++ a;
+
+        console.log('C ',c,'A ',a );
+
+        c = a ++;
+        console.log('C ',c,'A ',a);
+
+        c = -c;
+        console.log('C ', c);
+
+        a = '100';
+        let b = 20;
+        let obj = {
+            valueOf() {
+                return '10';
+            }
+        }
+
+        let e = 20 + obj;
+        console.log('e = ',e);
+
+        c = a * b + obj;
+        console.log('C = ', c);
+        
+        let d = false + 11 + true;
+        console.log('d = ', d);
+
+    </script>
+</body>
+</html>

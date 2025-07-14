@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+      let arr = [10,20,30]
+      console.log('arr[0] ', arr[0])
+      console.log('arr[1] ', arr[1])
+      console.log('arr[2] ', arr[2])
+      console.log('arr[].join ', arr.join()) //10,20,30
+
+      let arr1 = arr.join();
+      console.log(typeof arr1) //string
+
+      console.log('arr to string ', ''+arr) //10,20,30
+      console.log('[] to string ', ''+[]) //empty string
+      console.log('[1] to string ', ''+[1]) //1
+
+      //array -> string -> number
+      console.log('arr to number ', +arr) //NaN
+      console.log('+[] ', +[]) //0
+      console.log('+[undefined] ', +[undefined]) //0
+      console.log(' +[1]', +[1]) //1
+      console.log(' +[[1]]', +[[1]]) //1
+
+      //array -> boolean 
+      //all arrays are truthy
+      console.log('!![] ', !![])
+      console.log('!![undefined] ', !![undefined])
+      console.log('!![false] ', !![false])
+      
+    </script>
+</body>
+</html>
