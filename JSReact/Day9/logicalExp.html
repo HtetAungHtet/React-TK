@@ -15,6 +15,29 @@
         } else {
             console.log("Still at home");
         }
+
+        function getTrue(){
+            console.log('Get True');
+            return true;
+        };
+        function getFalse(){
+            console.log('Get False');
+            return false;
+        };
+
+        //If LHS is falsy -> return LHS
+        console.log(false && "something");
+        console.log(null && "something");
+        console.log(0 && "something");
+        console.log("" && "something");
+        console.log('GetFalse && GetTrue', getFalse() && getTrue());
+
+        //If LHS is truthy -> return RHS
+        console.log(true && "something");
+        console.log(1 && "something");
+        console.log(null && "something");
+        console.log(undefined && "something");
+        console.log('GetTrue && GetTrue', getTrue() && getTrue());
     </script>
 </body>
 </html>
