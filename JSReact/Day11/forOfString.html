@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frequency = {};
+        for(const letter of "missiomppsim") {
+            if (frequency[letter]) {
+                frequency[letter]++;
+            } 
+            else {
+                frequency[letter] = 1; //{'m' = 1}
+            }
+        }
+        console.log('frequency letter ', frequency);
+    </script>
+</body>
+</html>
