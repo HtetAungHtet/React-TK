@@ -1,0 +1,25 @@
+/*
+var vs let vs const
+
+var 
+	function scope
+	hoisting
+	redeclare
+
+let/const
+	block scope
+	no hoisting
+	cannot redeclared in same scope
+
+var
+	 function mhr so function scope and has auto hoisting
+	 global declare yin global scope
+
+var can be redeclared
+
+can not redeclared at same scope (var or let)
+
+c = 10;
+window htl win thar tal(ma use think)
+global htl win thwr
+*/

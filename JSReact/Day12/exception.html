@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function div(a,b) {
+            if(a == 0 || b == 0) {
+                throw new Error("a and b is zero!");
+            } 
+            else {
+                return a/b;
+            }
+            
+        }
+
+        try {
+            let result = div(0,0);
+            console.log('Result ', result);
+        } catch (e) {
+            console.log('Error ', e.message);
+        } finally{
+            console.log("Finally is always running");
+        }
+        console.log('END')
+    </script>
+</body>
+</html>

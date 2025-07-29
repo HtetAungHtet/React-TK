@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            name : 'HAH',
+            age : 27,
+            address : 'Botahtaung'
+        }
+        let obj2 = {
+            name : 'HAH',
+            age : 27,
+            address : {
+                Township : 'Botahtaung',
+                City : 'Yangon'
+            }
+        }
+        console.log('Obj ', obj);
+        console.log('Obj ',obj2.address);
+
+        let date = new Date();
+        console.log(date.getMonth());
+
+        let obj3 = new Object();
+        console.log('Object 3 ', obj3)
+
+        let parent = {
+            x : 100,
+            data : [100]
+        }
+        let obj4 = Object.create(parent);
+        console.log('Object prototype = ', obj4.x);
+
+        obj4.x = 200;
+        obj4.data.push(200); //read
+        console.log('New Obj x ', obj4);
+        console.log('New Obj x ', obj4.__proto__.x);
+
+        let obj5 = Object.create(parent);
+        console.log('Object 5 ', obj5);
+        console.log('Object5 ', obj5.data) 
+    </script>
+</body>
+</html>

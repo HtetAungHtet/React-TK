@@ -1,0 +1,16 @@
+null == null -----True
+null == undefined -----True
+otherwise ------False
+
+
+False == null
+Number(False) == null
+0 == null
+False
+
+Object
+    object to primitive conversion
+both string -> string
+otherwise number
+
+

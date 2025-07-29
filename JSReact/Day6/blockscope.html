@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function another(){
+            // let k = 'Hello';
+
+            {
+                console.log('K', k);
+
+                var k = 10;
+                console.log('K', k);
+
+                //let k = 20;
+                console.log('K', k);
+            }
+            //let k = 100;
+            console.log('K is ', k);
+        };
+        
+        another();
+        
+    </script>
+</body>
+</html>

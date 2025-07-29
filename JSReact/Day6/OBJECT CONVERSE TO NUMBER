@@ -1,0 +1,19 @@
+OBJECT CONVERSE TO NUMBER
+
+valueOf
+    false
+        primitive
+            0
+
+valueOf
+    Not Found
+        toString
+            primitive
+                toNumber
+
+
+valueOf
+    Found But Not primitive 
+        toString
+            primitive
+                toNumber

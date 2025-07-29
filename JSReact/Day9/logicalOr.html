@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function getTrue(){
+            console.log('Get True');
+            return true;
+        };
+        function getFalse(){
+            console.log('Get False');
+            return false;
+        };
+
+        //If LHS is falsy -> return RHS (//falsy so yin other side ko return pyan)
+        console.log(false || "something");
+        console.log(null || "something");
+        console.log(0 || "something");
+        console.log("" || "something");
+        console.log(null || "something");
+        console.log(undefined || "something");
+        console.log('GetFalse || GetTrue', getFalse() || getTrue());
+
+        //If LHS is truthy -> return RHS (//truthy so yin truthy ko return pyan)
+        console.log(true || "something");
+        console.log(1 || "something");
+        console.log({} || "something");
+        console.log(Object || "something");
+        console.log('GetTrue || GetTrue', getTrue() || getTrue());
+        console.log('GetTrue | GetTrue', getTrue() | getTrue());
+
+    </script>
+</body>
+</html>

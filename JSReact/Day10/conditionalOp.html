@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let raining = true;
+        let str;
+
+        if(raining){
+            
+            str = "Take Umbrella!";
+            console.log(str);
+
+        } else {
+
+            str = "Do not take umbrella!";
+            console.log(str);
+        };
+        
+        str = raining? 'Take Umbrella!' : 'Do not take umbrella!';
+        console.log(str);
+
+        const config = {
+            width : 100,
+            height : 100
+        };
+        // config.height = config.height || 300;
+        config.height = config.height ?? 300;
+        console.log('Width and height : ', config);
+    </script>
+</body>
+</html>

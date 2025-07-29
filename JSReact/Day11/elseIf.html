@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = +prompt('Enter Number = ');
+
+        if (num > 0) {
+
+            console.log('Positive');
+        }
+        else if (num == 0) {
+
+            console.log('Zero');
+        }
+        else {
+
+            console.log('Negative');
+        }
+
+        //Switch can test only number and string // test ====
+        switch(num)
+        {
+            case 0:
+                console.log('Zero');
+                break;
+            case 1:
+                console.log('One');
+                break;
+            case 2:
+                console.log('Two');
+                break;
+            case 3:
+                console.log('Three');
+                break;
+            default:
+                console.log('Others');
+        }
+    </script>
+</body>
+</html>

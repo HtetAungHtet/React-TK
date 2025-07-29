@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hello() {
+            for (i=0; i<10; i++) {
+                console.log("I ", i);
+
+                if(i == 5){
+                    return "Hello HAH!";
+                }
+            }
+            console.log("Return usecase")
+        }
+        let k = hello();
+        console.log("After return : ", k);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let raining = true;
+        let needToGoOut = true;
+
+        if(raining && needToGoOut) {
+            console.log("Grab Umbrella");
+        } else {
+            console.log("Still at home");
+        }
+
+        function getTrue(){
+            console.log('Get True');
+            return true;
+        };
+        function getFalse(){
+            console.log('Get False');
+            return false;
+        };
+
+        //If LHS is falsy -> return LHS //AND mhr so yin falsy so yin falsy pl return pyan
+        console.log(false && "something");
+        console.log(null && "something");
+        console.log(0 && "something");
+        console.log("" && "something");
+        console.log('GetFalse && GetTrue', getFalse() && getTrue());
+
+        //If LHS is truthy -> return RHS // AND mhr so yin truthy so yin other side ko return pyan
+        console.log(true && "something");
+        console.log(1 && "something");
+        console.log(null && "something");
+        console.log(undefined && "something");
+        console.log('GetTrue && GetTrue', getTrue() && getTrue());
+    </script>
+</body>
+</html>
